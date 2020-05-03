@@ -2,7 +2,7 @@
 layout: post
 title: "LeetCode Monthly Challenge - May'20 Edition - Early review"
 date: 2020-05-02 22:00:00 +0530
-tags: tech review competitive-coding
+tags: tech review competitive_coding
 description: "My first article? Nope."
 ---
 
