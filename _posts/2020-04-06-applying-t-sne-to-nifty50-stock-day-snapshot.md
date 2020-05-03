@@ -63,8 +63,9 @@ In the [repository](https://github.com/raghavsikaria/t-SNE-Visualization-on-NIFT
 
 3. Now we just need to apply t-SNE to this to reduce the data to 2-Dimensions - X and Y coordinates and plot them. But the challenge here is that we need to capture these coordinates for every iteration that t-SNE goes through, and **sklearn** - the library that gives us the t-SNE function in Python; only gives us the final iteration set of coordinates for each data row. To fix this up, enters this [beautiful article by Oreilly](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/) which teaches us how to do so.
 4. The solution is to monkey-patch the source code of the _gradient_descent() function provided by this library. Monkey Patching = Altering the original source code of the imported library(sklearn in this case) to achieve your desired functionality which in our case is to capture set of (X,Y) Coordinates for all iterations.
-5. Then there's always the issue of working with different library versions - we need to fix our monkey-patch for different versions. My sklearn's version is _0.22.1_, which is different from the Oreilly's version (0.15). So essentially, most of the versions post 0.15 will work by monkey patching this way:
+5. Then there's always the issue of working with different library versions - we need to fix our monkey-patch for different versions. My sklearn's version is _0.22.1_, which is different from the Oreilly's version (0.15). So essentially, most of the versions post 0.15 will work by monkey patching this way-
 
+asd 
 
 ```python
 sklearn.manifold._t_sne._gradient_descent = _gradient_descent
