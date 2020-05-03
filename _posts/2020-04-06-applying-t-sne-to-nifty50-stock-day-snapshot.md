@@ -17,7 +17,7 @@ In the last blog it was about understanding correlation between features in data
 
 I've received a lot of feedback from last time, am more generous with the references so that any uninitiated person will have access to all resources right from the start. The codebase is somewhat lengthier, so have made sure it is sufficiently commented for readability.
 
-P.S: Like always all code can be found here on GitHub.
+P.S: Like always all code can be found [here](https://github.com/raghavsikaria/t-SNE-Visualization-on-NIFTY50) on GitHub.
 
 TL;DR - This is what this article/mini-project attempts to achieve:
 
@@ -44,21 +44,28 @@ In a nutshell it will do this:
 
 ## The Process
 In the [repository](https://github.com/raghavsikaria/t-SNE-Visualization-on-NIFTY50) you can begin reading the code from **if __name__ == "__main__":** (verbatim)
-1. So I began with collecting data from [NSEIndia](https://www1.nseindia.com/live_market/dynaContent/live_watch/equities_stock_watch.htm) and took a snaphot of 3rd April 2020 for NIFTY 50 Stocks.
-1. Added all sectors to the data manually to have color encoding in the plot sector-wise. Data looks like this(first few rows):
 
-|Sector|Symbol|Open|High|Low|Last Traded Price|Change|%Change|Traded Volume(lacs)|Traded Value(crs)|52 Week High|52 Week Low|365 Days % Change|30 Days % Change|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Shipping|ADANIPORTS|246|252.8|238.9|244.2|-0.6|-0.25|72.1|179.14|430.6|203|-35.69|-28.31|
-|Consumer Goods|ASIANPAINT|1615.1|1616|1517.25|1522|-81.2|-5.06|29.26|449.42|1916.7|1291.25|0.18|-14.82|
-|Financial Services|AXISBANK|360.2|362.3|324|326.9|-31.75|-8.85|413.18|1417.61|827.75|286|-57.4|-52.22|
-|Automobile|BAJAJ-AUTO|2051.1|2056.3|1957.55|2020|-31.1|-1.52|6.92|139.21|	3315.15|1788.65|-29.2|-27.66|
-|Financial Services|BAJAJFINSV|4560|4646|4430|4520.05|18.15|0.4|7.22|327.73|9950|4160.25|-37.91|-49.3|
+
+1. So I began with collecting data from [NSEIndia](https://www1.nseindia.com/live_market/dynaContent/live_watch/equities_stock_watch.htm) and took a snaphot of 3rd April 2020 for NIFTY 50 Stocks.
+2. Added all sectors to the data manually to have color encoding in the plot sector-wise. Data looks like this(first few rows):
+
+    |Sector|Symbol|Open|High|Low|Last Traded Price|Change|%Change|Traded Volume(lacs)|Traded Value(crs)|52 Week High|52 Week Low|365 Days % Change|30 Days % Change|
+    |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+    |Shipping|ADANIPORTS|246|252.8|238.9|244.2|-0.6|-0.25|72.1|179.14|430.6|203|-35.69|-28.31|
+    |Consumer Goods|ASIANPAINT|1615.1|1616|1517.25|1522|-81.2|-5.06|29.26|449.42|1916.7|1291.25|0.18|-14.82|
+    |Financial Services|AXISBANK|360.2|362.3|324|326.9|-31.75|-8.85|413.18|1417.61|827.75|286|-57.4|-52.22|
+    |Automobile|BAJAJ-AUTO|2051.1|2056.3|1957.55|2020|-31.1|-1.52|6.92|139.21|	3315.15|1788.65|-29.2|-27.66|
+    |Financial Services|BAJAJFINSV|4560|4646|4430|4520.05|18.15|0.4|7.22|327.73|9950|4160.25|-37.91|-49.3|
+
+
+
 
 
 3. Now we just need to apply t-SNE to this to reduce the data to 2-Dimensions - X and Y coordinates and plot them. But the challenge here is that we need to capture these coordinates for every iteration that t-SNE goes through, and **sklearn** - the library that gives us the t-SNE function in Python; only gives us the final iteration set of coordinates for each data row. To fix this up, enters this [beautiful article by Oreilly](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/) which teaches us how to do so.
-1. The solution is to monkey-patch the source code of the _gradient_descent() function provided by this library. Monkey Patching = Altering the original source code of the imported library(sklearn in this case) to achieve your desired functionality which in our case is to capture set of (X,Y) Coordinates for all iterations.
-1. Then there's always the issue of working with different library versions - we need to fix our monkey-patch for different versions. My sklearn's version is _0.22.1_, which is different from the Oreilly's version (0.15). So essentially, most of the versions post 0.15 will work by monkey patching this way:
+4. The solution is to monkey-patch the source code of the _gradient_descent() function provided by this library. Monkey Patching = Altering the original source code of the imported library(sklearn in this case) to achieve your desired functionality which in our case is to capture set of (X,Y) Coordinates for all iterations.
+5. Then there's always the issue of working with different library versions - we need to fix our monkey-patch for different versions. My sklearn's version is _0.22.1_, which is different from the Oreilly's version (0.15). So essentially, most of the versions post 0.15 will work by monkey patching this way:
+
+
 ```python
 sklearn.manifold._t_sne._gradient_descent = _gradient_descent
 
@@ -108,7 +115,7 @@ Now that we have all data from t-SNE we just need to process it and feed into ou
     p.legend.click_policy = 'mute'
 ```
 
-2. Then we'll functionalities to it:
+2. Then we'll add functionalities to it:
 ```python
     ## CREATING A SLIDER FOR PLOT AND VIEWING TSNE ITERATIONS
     # SLIDER CALLBACK CUSTOM JS
