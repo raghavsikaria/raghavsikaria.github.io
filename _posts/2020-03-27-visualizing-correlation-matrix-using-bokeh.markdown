@@ -16,7 +16,7 @@ I didn't want the corona hibernation to go in vain and ended up learning some Bo
 
 P.S: All code can be found [here(GitHub)](https://github.com/raghavsikaria/Bokeh_CorrelationMatrix).
 
-TL;DR: here's what I came up with:
+**TL;DR**: here's what I came up with:
 
 ![2020-03-27-visualizing-correlation-matrix-using-bokeh Correlation Matrix](../assets/post_imgs/2020-03-27-visualizing-correlation-matrix-using-bokeh/correlation_matrix_gif.gif)
 

@@ -19,7 +19,7 @@ I've received a lot of feedback from last time, am more generous with the refere
 
 P.S: Like always all code can be found [here](https://github.com/raghavsikaria/t-SNE-Visualization-on-NIFTY50) on GitHub.
 
-TL;DR - This is what this article/mini-project attempts to achieve:
+**TL;DR** - This is what this article/mini-project attempts to achieve:
 
 
 ![2020-04-06-applying-t-sne-to-nifty50-stock-day-snapshot](../assets/post_imgs/2020-04-06-applying-t-sne-to-nifty50-stock-day-snapshot/nifty_tsne_gif_v3.gif)
