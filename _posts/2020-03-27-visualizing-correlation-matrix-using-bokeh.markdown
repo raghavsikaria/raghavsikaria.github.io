@@ -58,7 +58,6 @@ To the uninitiated, UCI Repository is one of the oldest and most popular data se
 Let's get our hands dirty with some code now(Any and all data files can be downloaded from the GitHub link given above):
 
 1. We first need to declare and initialize our plot:
-
 ```python
 ## SETTING UP THE PLOT
 p = figure(title=title,x_range=common_axes_val, y_range=list((common_axes_val)),x_axis_location="below", plot_width=plot_width, plot_height=plot_height,tools=BOKEH_TOOLS, toolbar_location='above',tooltips=[('Parameters', '@level_0 - @parameters'), ('Correlation', '@correlation')])
@@ -73,13 +72,11 @@ p.xaxis.major_label_orientation = pi/2
 ```
 
 2. Then, we'll need to give life to our HEATMAP(Correlation Map?):
-
 ```python
 ## SETTING UP HEATMAP RECTANGLES
 cir = p.rect(x="level_0", y="parameters", width=1, height=1,source=source,fill_color={'field': 'correlation', 'transform': mapper},line_color=None)
 ```
 3. We'll also create that color-bar that you see in the GIF above (right-most bar):
-
 ```python
 ## SETTING UP COLOR BAR
 color_bar = ColorBar(color_mapper=mapper, major_label_text_font_size="5pt",ticker=BasicTicker(desired_num_ticks=10),formatter=PrintfTickFormatter(format="%.1f"),label_standoff=6, border_line_color=None, location=(0, 0))
@@ -87,7 +84,6 @@ p.add_layout(color_bar, 'right')
 ```
 
 4. To this we'll add the main interactive weapon - the Color Scheme dropdown:
-
 ```python
 ## SELECT OPTION FOR INTERACTIVITY GIVEN TO USER
 select = Select(title='Color Palette',value='cividis', options=list(COLOR_SCHEME.keys()), width=200, height=50)
@@ -97,7 +93,6 @@ select.js_on_change('value', callback)
 ```
 
 5. But that's not where the magic lies. Bokeh's capability to exploit JS gives us that magical power to have interactivity in stand-alone HTML docs:
-
 ```python
 ## JS CALLBACK
 callback = CustomJS(args=dict(col_sch=COLOR_SCHEME,low=low_df_corr_min,high=high_df_corr_min,cir=cir,color_bar=color_bar), code="""
@@ -112,7 +107,6 @@ color_bar.color_mapper.palette = col_sch[chosen_color];
 ```
 
 6. And, there's always a but. Bokeh currently does not add the CDN import for Bokeh-API (known Issue) - which means the HTML code that it generates, simply forgets to the add the abovementioned import. Nevertheless, there's always a workaround, which is basically adding the import explictly by altering the generated HTML file:
-
 ```python
 ## GETTING AROUND BOKEH - SWITCHING FROM MIN TO MAIN (BASED ON RECOMMENDATIONS ON SIMLILAR QUESTIONS)
 ##                      - ADDING BOKEH API CDN SINCE BOKEH MISSES IT BYDEFAULT (KNOWN ISSUE)
