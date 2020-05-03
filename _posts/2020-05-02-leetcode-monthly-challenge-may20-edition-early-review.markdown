@@ -35,3 +35,10 @@ GitHub repository: [here!](https://github.com/raghavsikaria/LeetCode-31-day-May-
 ![git_rep_leetcode_snapshot.JPG repository snapshot](../assets/post_imgs/2020-05-02-leetcode-monthly-challenge-may20-edition-early-review/git_rep_leetcode_snapshot.JPG)
 
 You can check out this [Interview Prep series](https://www.hackerrank.com/interview/interview-preparation-kit) curated by Hackerrank or their Problem Solving series in its entirety.
+
+
+> यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।        
+> स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥   
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Bhagavad Gita 3.21॥
+
+(Read about this Shloka from the Bhagavad Gita here at [http://sanskritslokas.com/](http://sanskritslokas.com/gita-slokas1.html))

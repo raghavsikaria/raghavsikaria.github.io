@@ -25,6 +25,10 @@ github_username:  raghavsikaria
 repository: raghavsikaria/raghavsikaria.github.io
 permalink: /posts/:year-:month-:day-:title
 
+google_analytics: UA-165339475-1
+disqus:
+    shortname: thepiranha
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman

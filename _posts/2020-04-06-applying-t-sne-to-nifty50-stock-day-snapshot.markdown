@@ -191,3 +191,10 @@ https://www1.nseindia.com for making this data available.
 + https://www1.nseindia.com/live_market/dynaContent/live_watch/equities_stock_watch.htm
 + https://docs.bokeh.org/en/latest/index.html
 + https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/
+
+
+> न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्‌ ।     
+> कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः॥    
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Bhagavad Gita 3.5॥
+
+(Read about this Shloka from the Bhagavad Gita here at [http://sanskritslokas.com/](http://sanskritslokas.com/gita-slokas1.html))
