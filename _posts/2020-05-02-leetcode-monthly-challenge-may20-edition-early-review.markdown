@@ -3,7 +3,7 @@ layout: post
 title: "LeetCode Monthly Challenge - May'20 Edition - Early review"
 date: 2020-05-02 22:00:00 +0530
 tags: tech review competitive_coding
-description: "My first article? Nope."
+description: "My first attempt at being vocal about my views!"
 ---
 
 [Originally published here on LinkedIn](https://www.linkedin.com/pulse/leetcode-monthly-challenge-may20-edition-early-review-sikaria/)

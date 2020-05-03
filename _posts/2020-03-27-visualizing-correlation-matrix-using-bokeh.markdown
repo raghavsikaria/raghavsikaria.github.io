@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing Correlation Matrix using Bokeh(Python) - User Interactivity and JSCallBacks"
 date: 2020-03-27 22:00:00 +0530
 tags: tech python bokeh data_visualization machine_learning
-description: "My first article? Nope."
+description: "Pehle pyaar aur pehla blog, bhulaaye nahi bhoolte!"
 ---
 
 [Originally published here on LinkedIn](https://www.linkedin.com/pulse/visualizing-correlation-matrix-using-bokehpython-user-sikaria/)
