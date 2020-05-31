@@ -3,7 +3,7 @@ layout: post
 title: "Applying t-SNE to NIFTY50 Stock Day snapshot and visualizing all iterations using Bokeh(Python) - JSCallBacks & User Interactivity"
 date: 2020-04-06 22:00:00 +0530
 tags: tech python bokeh data_visualization machine_learning
-description: "Arre O Samba, kitne features they? Sardaar, poore 100. Phir bhi khaali haath laut gaye suarr ke bachhonn?"
+description: "Arre O Samba, kitne features they? Sardar, poore 100. Woh 100, aur tum BTech graduate! Phir bhi khaali haath laut aaye suarr ke bachhonn?"
 ---
 
 [Originally published here on LinkedIn](https://www.linkedin.com/pulse/applying-t-sne-nifty50-stock-day-snapshot-visualizing-raghav-sikaria/)

@@ -4,8 +4,23 @@ title: About me
 permalink: /about
 ---
 
-![About me image](assets/about_me.jpg)
 
-Have drained myself completely during the COVID Lockdown here in India, and just built this entire site in a day essentially leaving me at a loss of words.
-Nevertheless, I am your not so extra-ordinary sapien, who wants to venture out into the domain of FinTech. Like half of the country, I too did engineering (from VIT, Vellore) and my passion for coding and finance led me to clear CFA L1 - December'19. Oh, and I also used to be somewhat a professional theatre artist in another life.
-On this site, you'll find my most interesting projects all pertaining to FinTech.
+![A photo of me](assets/about_me/my_profile.jpg)
+*Hello, this is me!*
+
+Have drained myself completely during the COVID Lockdown here in India. Building a personal website had long been my dream, and after all these years of excuses; the lockdown had given me just the time for it! So I made this site because I have wanted to blog since forever, share my thoughts & poems, share my projects for being presentable in the FinTech domain for which I am crushing hard to penetrate and above all - because I wanted one!
+
+I am an engineer by profession, who wants to venture out into the domain of FinTech. Also used to be a professional theatre artist - got some few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club.
+Here is what has been happening on my board + life for past few months:
+
+![My current status](assets/about_me/current_status.jpg)
+*My current state + motto + mantra + ambitions*
+
+And this is my time-line:
+
+![My Timeline](assets/about_me/my_timeline.jpg)
+*My important milestones so far in life*
+
+### CONTACT
+
+You can reach out to me on LinkedIn or drop me an email at raghavsikaria9@gmail.com
