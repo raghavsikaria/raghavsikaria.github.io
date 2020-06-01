@@ -196,8 +196,6 @@ for column in df.columns.values:
 
 ![NIFTYBANK Index Stocks - Normalized Cumulative Returns][nifty_bank_stocks_cumulative_returns_img_path]
 
-
-
 ## Generating portfolios using Monte Carlo Simulation
 
 Well if you've reached till here - this is the fun part! We are going to create many - thousands of portfolios from our NIFTYBANK Index stocks. This is the basic idea - we have 12 stocks in our portfolio. We have to come up with as many portfolios as possible by allocating different weights to each these stocks. These weights we'll be generating in a randomised manner over thousands of iterations. _Imagine_, each iteration will give us a new set of 12 random weights, each set of unique random weights will generate a new portfolio for us and each portfolio will have it's own risk (volatility) and it's return!
