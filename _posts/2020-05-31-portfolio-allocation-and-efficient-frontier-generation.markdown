@@ -47,7 +47,7 @@ P.S: Like always all code can be found [here](https://github.com/raghavsikaria/P
 
 ## Data Generation
 
-Well, to work on a portfolio of NIFTYBANK we first need the data! The current index has 12 constituents of which Bandhan Bank was the newest entry(added when it went Public on 27th March 2018). Hence, for this project I have decided to work only on data from 4rth April 2018 to 22th May 2020. Let's see what the index looks like today (As of 25th May 2020)
+Well, to work on a portfolio of NIFTYBANK we first need the data! The current index has 12 constituents of which Bandhan Bank was the newest entry(added when it went Public on 27th March 2018). Hence, for this project I have decided to work only on data from 4th April 2018 to 22th May 2020. Let's see what the index looks like today (As of 25th May 2020)
 
 |Company|Symbol|Sector|Ownership|Closing Price|Market Cap (Cr.)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -172,7 +172,7 @@ I have generated this correlation matrix using one of my other projects. You can
 
 ### NIFTYBANK Index Stocks - Daily Lognormalized Returns
 
-We can achieve this by simply taking log of change of price at intervals of 1 day.
+We can find out about the daily returns of all constituents by simply taking log of change of price at intervals of 1 day.
 
 ~~~ python
 df_log_daily_return = pd.DataFrame(index=df.index)
@@ -185,7 +185,7 @@ for column in df.columns.values:
 
 ### NIFTYBANK Index Stocks - Normalized Cumulative Returns
 
-I have taken the base day as 4rth April 2020, and calculated the cumulative returns with respect to that day.
+I have taken the base day as 4th April 2020, and calculated the cumulative returns with respect to that day.
 
 ~~~ python
 df_normalised_return = pd.DataFrame(index=df.index)
@@ -371,7 +371,7 @@ Owing to hardware limitation from my end, I first tried with only the abovementi
 
 However, am also adding what I came up with for the entire NIFTBANK portfolio universe. Please note this is *misleading*.
 Reasons:
-* Since the universe of 12 constituents is too big, we need several hundreds of thousands of iterations to even begin to get an idea about the universe. However, my laptop limited me to a few thousand portfolios only which you see in the Plot.
+* Since the universe of 12 constituents is too big, we need several hundreds of thousands of iterations to even begin to get an idea about the universe. However, my hardware limitations allowed me only a few thousand portfolios which you see in the Plot.
 * Nevertheless, the efficient frontier does give us some sort of an idea about our portfolio universe and what our possible optimal set of portfolios could have been
 * The max Sharpe Ratio pointed out on this one, is only for the portfolios that we have generated from our limited number of iterations!
 
