@@ -13,10 +13,10 @@ description: ' "Risk to Spiderman ko bhi lena padta hai, main to phir bhi salesm
 [nifty_bank_hiiks_efficient_frontier_gif_path]: ../assets/post_imgs/2020-05-31-portfolio-allocation-and-efficient-frontier-generation/NIFTYBANK_HIIKSportfolio_efficient_frontier_gif.gif
 
 
-Hello reader, ever heard about the terms _Asset/Portfolio allocation_? If you have, chances are you've also heard about the MPT - Modern Portfolio Theory and Markovitz Efficient Frontier! Well this post and project are quite technical and will be based on these topics.
+Hello reader, ever heard of the terms _Asset/Portfolio allocation_? If you have, chances are you've also heard about the MPT - Modern Portfolio Theory and Markovitz Efficient Frontier! Well this post and project are quite technical and will be based on these topics.
 
-So sometime back, I finished the famous [**Python For Financial Analysis and Algorithmic Trading**](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/) on _Udemy_ by the genius instructor [**Jose Portilla**](https://www.linkedin.com/in/jmportilla/).
-In this project, I attempt to reuse the code provided in the course, extend it for generalization in Python and add some great & interactive visualizations using Bokeh. And I have chosen to work on NIFTYBANK Index Portfolio.
+So sometime back, I finished the famous [**Python For Financial Analysis and Algorithmic Trading**](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/) by the genius instructor [**Jose Portilla**](https://www.linkedin.com/in/jmportilla/), on _Udemy_.
+In this project, I attempt to reuse the code provided in the course, extend it for generalization in Python and add some great interactive visualizations using Bokeh. I chose to work on NIFTYBANK Index Portfolio.
 
 P.S: Like always all code can be found [here](https://github.com/raghavsikaria/Portfolio-Optimization-and-Efficient-Frontier) on GitHub.
 
