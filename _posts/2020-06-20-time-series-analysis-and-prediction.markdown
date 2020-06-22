@@ -23,24 +23,26 @@ description: ' "Sahi time par sahi jagah hona, sahi time par sahi baat karna, au
 [niftybank_acf_pacf]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/niftybank_2000-2019_acf_pacf.PNG
 [niftybank_returns_arima]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/niftybank_2000-2019_returns_arima_predictions.PNG
 
-**DISCLAIMER** - _What this project is not!_:
+**DISCLAIMER** - _What this project is not_:
 
 1. This project does not give any investment advice & is purely for research and academic purposes
 2. The code is not meant for production, error-catching and logging mechanism have been skipped intentionally
 
 **One word** for my fellow developers & interested folks:
 
-1. If you like the project or find it interesting, please star it on GitHub
-2. Kindly provide a link back to this project or my profile on LinkedIn/GitHub if you use any of the codes in any capacity (courtsey in Open Source)
-3. Since the project is in active developement, if you find anything wrong/sinful: please raise an issue in GitHub repository [here][github_repository]
-4. If you want to enhance/improve/help or contribute in any capacity: please raise a PR in GitHub repository [here][github_repository]
-5. I am quite dissatisfied with the code design, and would appreciate if anyone can improve over it!
+**IF**
+
++ You like the project -> please star it on GitHub
++ You find anything wrong -> please raise an issue in GitHub repository [here][github_repository]
++ You want to enhance/improve/help or contribute in any capacity -> please raise a PR in GitHub repository [here][github_repository]
++ You use any of the codes -> kindly provide a link back to this project or my profile on LinkedIn/GitHub (courtsey in Open Source)
+...there's always scope in improving the code design!
 
 > I can't recall ever once having seen the name of a market timer on Forbes' annual list of the richest people in the world. If it were truly possible to predict corrections, you'd think somebody would have made billions by doing it.                               
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Peter Lynch
 
-Hello reader, this project is completetly about Time Series - its analysis, prediction modelling and hyperparameter optimization - specifically Bayesian HPO using Gausian Processes. I have made sure that the code is reusable & generic enough. You can find some cool coding hacks and extensive API usage of libraries in the code. You can also try it out on different data sets as well! We'll be coding together and apply ARIMA, Deep Learning - CNNs, LSTMs & the likes. It's going to be extremely technical, all code has been open sourced [here on GitHub][github_repository] and I have tried my best to aid you with explicit code comments and annotations.
-The project has been implemented in Python.
+Hello reader, this project is completetly about Time Series - its analysis, prediction modelling and hyperparameter optimization(HPO) - specifically Bayesian HPO using Gausian Processes. I have made sure that the code is reusable. You can find some cool coding hacks and extensive API usage of libraries in the code. What's more?! Since the code is generic, you can also try it out on different data sets as well! We'll employ ARIMA, Deep Learning - CNNs, LSTMs & the likes. It's going to be extremely technical, all code has been open sourced [here][github_repository] and I have tried my best to aid you with explicit code comments and annotations.
+The project has been implemented in Python & following are the libraries utilised:
 
 + Deep Learning library - tf.keras (yes, there's difference between this and Keras)
 + Visualization library - Bokeh
@@ -51,7 +53,7 @@ Will also be writing in detail in upcoming weeks about underlying math and theor
 
 I attended [CFA Society, India's][cfa_india_soc_profile] webinar on 11th April '20 by [Kriti Mahajan][kriti_mahajan_profile] moderated by [Shreenivas Kunte, CFA, CIPM][shreenivas_kunte_profile] on the topic- _"Practitioners' Insights: Using a Neural Network to Predict Stock Index Prices"_ which gave me the idea & inspiration to invest my time in this direction and this project was born!
 
-P.S: Like always all code can be found [here][github_repository] on GitHub.
+P.S: Like always all code can be found [here][github_repository].
 
 ## Objective
 
@@ -59,10 +61,10 @@ P.S: Like always all code can be found [here][github_repository] on GitHub.
 + To conduct Data exploration for understanding the data
 + To process time-series data, normalise it and conduct data-stationarity testing
 + To prepare benchmark in predictive modelling using traditional algorithms like ARIMA
-+ To apply Deep Learning techniques & improve on predictive modelling performance
++ To apply Deep Learning techniques & try and improve on predictive modelling performance
   + To automate modelling process
-  + To automate & apply Bayesian Hyperparameter Optimization techniques and find optimal hyperparameters for the models
-  + To automate & generate markdown document for each model which summarizes model in its entirity - from architecture, to HPO process to performance
+  + To automate & apply Bayesian HPO techniques and find optimal hyperparameters for the models
+  + To automate & generate markdown document for each model which summarizes the model in its entirety - from architecture to HPO process to performance
 
 ## Contents
 
@@ -83,7 +85,7 @@ P.S: Like always all code can be found [here][github_repository] on GitHub.
 
 ## Data Exploration, Analysis & Processing
 
-The current index has 12 constituents of which Bandhan Bank was the newest entry(added when it went Public on 27th March 2018). Let's see what the index looks like today (As of 19th June 2020)
+The current index has 12 constituents of which Bandhan Bank was the newest entry (added when it went Public on 27th March 2018). Let's see what the index looks like today (As of 19th June 2020)
 
 |Company|Symbol|Sector|Ownership|Closing Price|Market Cap (Cr.)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -100,18 +102,18 @@ The current index has 12 constituents of which Bandhan Bank was the newest entry
 | RBL Bank|RBLBANK|Financial Services - Bank|Private|168.90|8,592.13|
 | SBI |SBIN|Financial Services - Bank|Public|184.50|164,659.08|
 
-For this project, I have worked on a private data set which has Time-Series data comprising of more than 350 macro-economic variables pertaining to India. Currently I am trying to make it public so that everyone can explore it. The data spans 20 years starting from 2000-01-18 and ending at 2020-02-13.
+For this project, I have worked on a private data set which has Time Series data comprising of more than 350 macro-economic variables pertaining to India. Currently I am trying to make it public so that everyone can explore it. The data spans 20 years starting from 2000-01-18 and ending at 2020-02-13.
 
 ### NIFTYBANK - A glance
 
 ![NIFTYBANK - 2000 to 2019][niftybank_2000-2019]
 *Nifty Bank progression over 2 decades based on closing prices*
 
-NIFTYBank has come a long way since it's inception. At first look, it's quite difficult to judge for Variance for this data. However, just by looking at Mean progression: one can conclude that this data is not covariance stationary.
+NIFTYBank has come a long way since it's inception. At first look, it's quite difficult to judge for variance for this data. However, just by looking at mean progression: one can conclude that this data is not covariance stationary.
 
 ### Checking for Covariance Stationarity
 
-Time series modelling is quite the demanding task. We need to mathematically check for covariance stationarity on our data, and if not we need to transform the data such that it becomes stationary.
+Time series modelling is quite challenging. We need to mathematically check for covariance stationarity on our data and if not, we need to transform the data such that it becomes stationary.
 Let's check for the same on our data. We'll use the Augmented Dickey-Fuller statistical test for this. Here's a snippet that'll give you an idea on how we can conduct this test:
 
 ~~~python
@@ -148,7 +150,23 @@ Here are the results:
 ![NIFTYBANK - ADF Test results][niftybank_adf_test_results]
 *ADF Test results & verdict on stationarity over all features in dataset*
 
-Quite a few features are not stationary, especially our dependent feature of NIFTYBank. We could have gone ahead with the same data for our modelling as all features are cointegrated(economically linked to same macro-economic variables), but presence of few stationary features pose a problem. Hence, we'll make all features stationary by transforming the data for _daily returns_ of all the features, and then checking for stationarity! Here is a glance at NIFTYBank Returns:
+Quite a few features are not stationary, especially our dependent feature of NIFTYBank. We could have gone ahead with the same data for our modelling as all features are cointegrated (economically linked to same macro-economic variables), but presence of few stationary features pose a problem. Hence, we'll make all features stationary by transforming the data for _daily returns_ of all the features, and then checking for stationarity. Here is how we can transform our data:
+
+~~~python
+  # Assuming df = our DATA which we want to transform
+  df_columns = df.columns.values
+  daily_pct_change_df = pd.DataFrame(index=df.index)
+
+  # Generating new columns as percentage change
+  # on a single day basis
+  for col in df_columns:
+      daily_pct_change_df[f'{col} returns'] = df[col].pct_change(1)
+
+  # Dropping first row as it contains all NAN values!
+  daily_pct_change_df.drop(daily_pct_change_df.index[0],inplace=True)
+~~~
+
+Here is a glance at NIFTYBank Returns:
 
 ![NIFTYBANK - 2000 to 2019 - Returns][niftybank_2000-2019_returns]
 *Nifty Bank Returns progression over 2 decades based on closing prices*
