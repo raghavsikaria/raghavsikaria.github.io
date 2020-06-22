@@ -7,7 +7,7 @@ permalink: /about
 ![A photo of me](assets/about_me/my_profile.jpg)
 *Hello, this is me!*
 
-I am an engineer by profession, who wants to venture out into the domain of FinTech. Currently I am looking for roles in Quantitative Research/Analyst/Developer domains. Also used to be a professional theatre artist - did a few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club.
+I am an engineer by profession, who wants to venture out into the domain of FinTech. Currently I am looking for roles in Data Science, Quantitative Research/Analyst/Developer or Software Engineering for Fintech domains. Also, I used to be a professional theatre artist - did a few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club.
 
 Have drained myself completely during the COVID Lockdown here in India. Building a personal website had long been my dream, and after all these years of excuses; the lockdown had given me just the time for it! So I made this site because I have wanted to blog since forever, share my thoughts & poems, share my projects for being presentable in the FinTech domain for which I am crushing hard to penetrate and above all - because I wanted one!
 
