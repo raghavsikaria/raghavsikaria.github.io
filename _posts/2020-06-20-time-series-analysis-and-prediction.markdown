@@ -176,15 +176,15 @@ Let's check for covariance stationarity on this transformed data (All calculated
 ![NIFTYBANK Returns - ADF Test results][niftybank_returns_adf_test_results]
 *ADF Test results & verdict on stationarity over all features in transformed dataset*
 
-We can now safely conclude that dataset can be called covariance stationary and proceed with further processing.
+We can now safely conclude that the dataset can be called covariance stationary and proceed with further processing.
 
 ### Normalizing the Data
 
-We know that our features have different ranges and even follow their own different distributions, and this can cause issues when we use this data in our models. An easily observable issue is that some features might influence the result more/less than others. We will first standardize our data by calculating Z-score for every data point across all features. This will ensure that our data across all features has a mean tending to zero and standard deviation tending to 1. And then, we'll apply feature scaling to range [-1,1] to ensure that all features abide by these ranges! 
+We know that our features have different ranges and even follow their own different distributions, and this can cause issues when we use this data in our models. An easily observable issue is that some features might influence the result more/less than others. We will first standardize our data by calculating Z-score for every data point across all features. This will ensure that our data has a mean tending to zero and standard deviation tending to 1. And then, we'll apply feature scaling to range [-1,1] to ensure that all features abide by these ranges.
 
 ~~~python
   # Assuming we have split our data into training, validation & testing sets
-  # (Refer for repository for splitting data util functions)
+  # (Refer to repository for splitting data util functions)
   # Here is how were are going to STANDARDIZE it:
   from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
@@ -201,12 +201,12 @@ We know that our features have different ranges and even follow their own differ
   minmax_norm_testing_data = minmax_scaler.transform(standardized_testing_data)
 ~~~
 
-Here is a visual aid to show effects of both these transformations on our data. (Have taken only the Dependent variable here for illustration):
+Here is a visual aid to show effects of both these transformations on our data. (Have taken only the dependent variable here for illustration):
 
 ![NIFTYBANK Returns - effects of transformation][niftybank_returns_normalization_comparison]
 *Effects of transformation on 1 of the features on our data*
 
-Do check the max & min values, mean and standard deviation across all plots above. It will definitely bring more clarity!
+Do check the max and min values, mean and standard deviation across all plots above. It will definitely bring more clarity!
 Before proceeding further, let's visit the constituents of NIFTYBANK briefly. (This analysis is part of my [NIFTYBANK Portfolio Optimization & Efficient Frontier Generation project][site_link_for_portfolio_proj]. You can visit the project's repository [here][github_repository_for_portfolio_proj] to get codes for this. Also, NIFTYBANK data from 4th April 2018 to 22th May 2020 has been considered for this.)
 
 ### Correlation between all NIFTYBANK Index stocks
@@ -281,7 +281,7 @@ I have taken the base day as 4th April 2020, and calculated the cumulative retur
 ## Generating Benchmark using ARIMA
 
 Let's apply the widely known ARIMA model to our data. This is a traditional statistical algorithm, and we'll consider results from this model as our benchmark for comparing other complex Deep Learning models.
-Let's first have a look at Autocorrelation & Partial Autocorrelation function plots! Here is a snippet which will give us an idea on how we can do this:
+Let's first have a look at Autocorrelation and Partial Autocorrelation function plots. Here is a snippet which will give us an idea on how we can do this:
 
 ~~~python
   # Assuming df = DATA on which we wish to plot the ACF & PACF functions
@@ -297,7 +297,7 @@ Let's first have a look at Autocorrelation & Partial Autocorrelation function pl
 ![NIFTYBank ACF & PACF Plot][niftybank_acf_pacf]
 *ACF & PACF Plots on our NIFTYBANK Returns dependent variable*
 
-A look at the plots tells us that with 95% confidence, correlation values post 1st lag are mostly statistical flukes and can safely be ignored i.e within 1st lag, AR is significant! This will help us decide on hyperparameters for our ARIMA model. These are the results I recieved on an ARIMA model:
+A look at the plots tells us that with 95% confidence, correlation values post 1st lag are mostly statistical flukes and can safely be ignored i.e within 1st lag, AR is significant! This will help us decide on hyperparameters for our ARIMA model. These are the results I recieved:
 
 ![NIFTYBANK returns ARIMA][niftybank_returns_arima]
 *Prediction results & MSE on validation + test data via ARIMA model to be considered as a benchmark*
