@@ -6,7 +6,7 @@ tags: tech python data_visualization bokeh machine_learning time_series hyperpar
 description: ' "Sahi time par sahi jagah hona, sahi time par sahi baat karna, aur sahi time par sahi kaam uthana, isi ko luck kehte hai." - Danny Denzongpa from movie Luck '
 ---
 
-[github_repository]: https://github.com/raghavsikaria/Project-Rajasuya
+[github_repository]: https://github.com/raghavsikaria/Project-Rajasuyya
 [github_repository_for_portfolio_proj]: https://github.com/raghavsikaria/Portfolio-Optimization-and-Efficient-Frontier
 [site_link_for_portfolio_proj]: https://raghavsikaria.github.io/posts/2020-05-31-portfolio-allocation-and-efficient-frontier-generation
 [nifty_bank_stocks_lognormal_daily_returns_img_path]: ../assets/post_imgs/2020-05-31-portfolio-allocation-and-efficient-frontier-generation/NIFTYBANK_df_log_returns_histogram.png
@@ -78,7 +78,7 @@ P.S: Like always all code can be found [here][github_repository].
 3. [Deep Neural Networks](#deep-neural-networks)
     + [Simple Convolutional Neural Network](#simple-convolutional-neural-network)
     + [Simple LSTM Network](#simple-lstm-network)
-4. [Understanding the Code](#understanding-the-code)
+4. [Navigating the Repo](#navigating-the-repo)
 5. [Acknowledgements](#acknowledgements)
 6. [References](#references)
 
@@ -305,7 +305,12 @@ Now that we somewhat have a benchmark, let's try out Deep Neural Networks.
 
 ## Deep Neural Networks
 
-Let us now try and dive into Deep Neural Networks. I have prepared 2 very basic networks - a simple convolutional neural network and a simple LSTM network. Neural Networks are notoriously famous for their complex backend and black-box nature! I'll be covering detailed analysis of these networks in upcoming weeks and add more complex models also. For now, you may refer the code in repository and try them out yourself! Here are some results from the auto-generated Markdown reports I achieved from these models. The ones which might catch your attention are HPO pertaining plots, especially the iterations plot where you can see what all candidate hyperparameters are considered sequentially by the BHPO method over the course of its iterations. Convergence plot shows us the progress of our optimization function in BHPO with the best result till the latest iteration. Above all, take the results with a pinch of salt. The data span of 2 decades can not be used to generate any inference over a short forecast period. (Interactive plots of the below graphs can be found in HTML files in this model's assets in repository):
+Let us now try and dive into Deep Neural Networks. I have prepared 2 very basic networks - a simple convolutional neural network and a simple LSTM network. Neural Networks are notoriously famous for their complex backend and black-box nature! I'll be covering detailed analysis of these networks in upcoming weeks and add more complex models also. For now, you may refer the code in repository and try them out yourself! Here are some results from the auto-generated Markdown reports I achieved from these models. 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ones which might catch your attention are HPO pertaining plots, especially the iterations plot where you can see what all candidate hyperparameters are considered sequentially by the BHPO method over the course of its iterations. Convergence plot shows us the progress of our optimization function in BHPO with the best result till the latest iteration. 
+<br>
+<br>
+Above all, take the results with a pinch of salt. The data span of 2 decades can not be used to generate any inference over a short forecast period. (Interactive plots of the below graphs can be found in HTML files in this model's assets in repository):
 
 ### REPORTS
 
@@ -454,7 +459,7 @@ _________________________________________________________________
 
 <span style="display:block;text-align:center">![Simple LSTM Network - Predictions - Will be added when predictions are generated][sln_model_prediction_path]</span>
 
-## Understanding the Code
+## Navigating the Repo
 
 Here is quick primer to understand repository and structure of code:
 
