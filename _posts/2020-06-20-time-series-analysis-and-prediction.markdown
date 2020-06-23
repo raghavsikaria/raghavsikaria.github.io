@@ -465,7 +465,6 @@ Here is quick primer to understand repository and structure of code:
 │   └── simple_lstm
 ├── config
 │   └── model_configurations.py
-├── driver.ipynb
 ├── initiate_predictive_modelling.py
 ├── LICENSE
 ├── models
@@ -480,12 +479,12 @@ Here is quick primer to understand repository and structure of code:
 
 + assets: You can find all plots, html files, markdown documents here
 + config/model_configurations.py: You can find all config variables set here for the entire project
-+ driver.ipynb: A jupyter notebook to show how to go about modelling! It can give an idea on how all utilities interact
-+ initiate_predictive_modelling.py: A temporary piece of code I created over other utilities so that one can carry out end to end process
++ initiate_predictive_modelling.py: A temporary piece of code I created over other utilities so that one can carry out end to end process and get a feel of things
 + utils/data_processing_utils.py: You can find all Data processing tools here - reading CSV, dealing with NA, interpolation of data, saving df, computing lagged features, splitting time series data, data standardization, data normalization, etc
 + utils/data_stationarity_utils.py: You can find functions here to check for covariance stationarity over given data
 + utils/data_visualization_utils.py: You can find all visualization related functions here - bokeh utils, skopt plots, etc
 + utils/model_utilities.py: You can find all model related utilities here - saving your model, generating predictions, conducting HPO, etc
++ models/neural_network_models.py: Contains interfaces for all models that we prepare
 
 If I've had your interest so far, let's collaborate over [GitHub][github_repository] and make this better.
 You can also reach out to me incase you have any queries pertaining to anything. Hope this helps!
