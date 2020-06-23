@@ -26,11 +26,10 @@ description: ' "Sahi time par sahi jagah hona, sahi time par sahi baat karna, au
 **DISCLAIMER** - _What this project is not_:
 
 1. This project does not give any investment advice & is purely for research and academic purposes
-2. The code is not meant for production, error-catching and logging mechanism have been skipped intentionally
+2. The analysis is based on data spanning 2 decades and the macro-economic scenario changes alone in that span, make it impractical for us to draw any inference in short term from this analysis
+3. The code is not meant for production, error-catching and logging mechanism have been skipped intentionally
 
-**One word** for my fellow developers & interested folks:
-
-**IF**
+**AND IFF**
 
 + You like the project -> please star it on GitHub
 + You find anything wrong -> please raise an issue in GitHub repository [here][github_repository]
@@ -306,7 +305,9 @@ Now that we somewhat have a benchmark, let's try out Deep Neural Networks.
 
 ## Deep Neural Networks
 
-Let us now try and dive into Deep Neural Networks. I have prepared 2 very basic networks - a simple convolutional neural network and a simple LSTM network. Neural Networks are notoriously famous for their complex backend and black-box nature! I'll be covering detailed analysis of these networks in upcoming weeks. For now, you may refer the code in repository and try them out yourself! Here are some results from the auto-generated Markdown reports I achieved from these models (Interactive plots of the below graphs can be found in HTML files in this model's assets in repository):
+Let us now try and dive into Deep Neural Networks. I have prepared 2 very basic networks - a simple convolutional neural network and a simple LSTM network. Neural Networks are notoriously famous for their complex backend and black-box nature! I'll be covering detailed analysis of these networks in upcoming weeks and add more complex models also. For now, you may refer the code in repository and try them out yourself! Here are some results from the auto-generated Markdown reports I achieved from these models. The ones which might catch your attention are HPO pertaining plots, especially the iterations plot where you can see what all candidate hyperparameters are considered sequentially by the BHPO method over the course of its iterations. Convergence plot shows us the progress of our optimization function in BHPO with the best result till the latest iteration. Above all, take the results with a pinch of salt. The data span of 2 decades can not be used to generate any inference over a short forecast period. (Interactive plots of the below graphs can be found in HTML files in this model's assets in repository):
+
+### REPORTS
 
 ### Simple Convolutional Neural Network
 
@@ -383,14 +384,14 @@ Non-trainable params: 0
 
 ### Simple LSTM Network
 
-[sln_model_plot_path]: simple_lstm_model_plot_TS_22-06-2020_20-33-59-PM.png
-[sln_model_training_hist_path]: simple_lstm_model_training_hist_22-06-2020_20-33-59-PM.png
-[sln_model_prediction_path]: simple_lstm_model_prediction_22-06-2020_20-34-51-PM.png
-[sln_hpo_plot_convergence_path]: hpo_plot_convergence.png
-[sln_hpo_plot_evaluation_path]: hpo_plot_evaluation.png
-[sln_hpo_plot_objective_path]: hpo_plot_objective.png
-[sln_hpo_plot_regret_path]: hpo_plot_regret.png
-[sln_model_hpo_iterations_path]: hpo_iterations.png
+[sln_model_plot_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/simple_lstm_model_plot_TS_23-06-2020_11-53-35-AM.png
+[sln_model_training_hist_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/simple_lstm_model_training_hist_23-06-2020_11-53-35-AM.png
+[sln_model_prediction_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/simple_lstm_model_prediction_23-06-2020_11-54-56-AM.png
+[sln_hpo_plot_convergence_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/hpo_plot_convergence.png
+[sln_hpo_plot_evaluation_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/hpo_plot_evaluation.png
+[sln_hpo_plot_objective_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/hpo_plot_objective.png
+[sln_hpo_plot_regret_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/hpo_plot_regret.png
+[sln_model_hpo_iterations_path]: ../assets/post_imgs/2020-06-20-time-series-analysis-and-prediction/simple_lstm_assets/hpo_iterations.png
 
 #### Model Summary 
 
@@ -398,22 +399,22 @@ Non-trainable params: 0
 
 Model: "simple_lstm_network"
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
-input_1 (InputLayer)         [(None, 30, 600)]         0         
+input_1 (InputLayer)         [(None, 30, 600)]         0
 _________________________________________________________________
-lstm (LSTM)                  (None, 20)                49680     
+lstm (LSTM)                  (None, 300)               1081200
 _________________________________________________________________
-activation (Activation)      (None, 20)                0         
+activation (Activation)      (None, 300)               0
 _________________________________________________________________
-dropout (Dropout)            (None, 20)                0         
+dropout (Dropout)            (None, 300)               0
 _________________________________________________________________
-dense (Dense)                (None, 1)                 21        
+dense (Dense)                (None, 1)                 301
 _________________________________________________________________
-activation_1 (Activation)    (None, 1)                 0         
+activation_1 (Activation)    (None, 1)                 0
 =================================================================
-Total params: 49,701
-Trainable params: 49,701
+Total params: 1,081,501
+Trainable params: 1,081,501
 Non-trainable params: 0
 _________________________________________________________________
 
