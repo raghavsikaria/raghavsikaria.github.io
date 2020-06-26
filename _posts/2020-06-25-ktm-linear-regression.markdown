@@ -97,9 +97,9 @@ Well, if now, we can prove that determinant of our Hessian is positive (more str
 ![Exploring Hessian][hessian_matrix]
 *Concluding evidence from the Hessian*
 
-Our expression above, could also have the value 0, which will invalidate our conclusion of Minima, however that case will only arise when all x _i_ are some same constant. And this case will violate the very first assumption we made in the top! Hence we can safely ignore this and rejoice that we are correct.
+Our expression above, could also have the value 0, which will invalidate our conclusion of Minima, however that case will only arise when all x_i are some same constant. And this case will violate the very first assumption we made in the top! Hence we can safely ignore this and rejoice that we are correct.
 
-Hope I was able to help you out with the concepts mentioned! If not please leave feedback in comments as to how I can improve, since I plan to continue the _Know The Math_ series. Am also attaching some references for additional information.
+We now atleast are at the level, from where we can touch the feet of Lord Vishnu. Hope I was able to help you out with the concepts mentioned! If not please leave feedback in comments as to how I can improve, since I plan to continue the _Know The Math_ series. Am also attaching some references for additional information.
 
 ## References
 
