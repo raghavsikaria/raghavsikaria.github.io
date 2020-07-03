@@ -42,7 +42,7 @@ We can safely say, that the range of y is from negative infinity to positive inf
 
 ## Maximum Likelihood Estimation (MLE) & The Cost Function
 
-MLE is a statistic phenomenon and is basically a probabilistic framework from estimating the parameters for a model. Even I am yet to fully understand and appreciate the underlying math, but for our purpose we can continue like this:
+MLE is a statistical algorithm and is basically a probabilistic framework from estimating the parameters for a model. It's vast potential leaves us with alot to appreciate and even more to understand, however, for our purpose we can continue like this:
 
 ![mle and cost function][mle_cost_function]
 *MLE and our Cost Function - The Cross Entropy*
