@@ -16,7 +16,7 @@ description: ' "Hum jahan khade ho jaate hain, line wahi se shuru hoti hain." - 
 [hessian_matrix]: ../assets/post_imgs/2020-06-25-ktm-linear-regression/hessian_matrix.png
 [jacobian]: ../assets/post_imgs/2020-06-25-ktm-linear-regression/jacobian.png
 
-Hello reader, welcome to my _Know The Math_ series, a less formal series of blogs, where I take you through the *notoriously complex* backend mathematics which forms the soul for machine learning algorithms. The idea for the series originated from my Project - [NIFTYBANK Index Time series analysis, Prediction, Deep Learning & Bayesian Hyperparameter Optimization][site_link_for_portfolio_proj] where quite a lot of people gave me feedback to also explain the underlying concepts.
+Hello reader, welcome to my _Know The Math_ series, a less formal series of blogs, where I take you through the *notoriously complex* backend mathematics which forms the soul for machine learning algorithms. The idea for the series originated from my Project - [NIFTYBANK Index Time series analysis, Prediction, Deep Learning & Bayesian Hyperparameter Optimization][site_link_for_portfolio_proj] where people also asked to explain the underlying concepts.
 
 Before we begin, I need you to conduct a ceremony:
 

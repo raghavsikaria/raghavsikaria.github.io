@@ -12,7 +12,7 @@ description: ' "Aadhe idhar jao ... aadhe idhar jao ... aur baaki hamare saath a
 [mle_cost_function]: ../assets/post_imgs/2020-07-01-ktm-logistic-regression/mle_cost_function.png
 [cost_function_gradient]: ../assets/post_imgs/2020-07-01-ktm-logistic-regression/cost_function_gradient.png
 
-Hello reader, welcome to my _Know The Math_ series, a less formal series of blogs, where I take you through the *notoriously complex* backend mathematics which forms the soul for machine learning algorithms. The idea for the series originated from my Project - [NIFTYBANK Index Time series analysis, Prediction, Deep Learning & Bayesian Hyperparameter Optimization][site_link_for_portfolio_proj] where quite a lot of people gave me feedback to also explain the underlying concepts.
+Hello reader, welcome to my _Know The Math_ series, a less formal series of blogs, where I take you through the *notoriously complex* backend mathematics which forms the soul for machine learning algorithms. The idea for the series originated from my Project - [NIFTYBANK Index Time series analysis, Prediction, Deep Learning & Bayesian Hyperparameter Optimization][site_link_for_portfolio_proj] where people also asked to explain the underlying concepts.
 
 Before we begin, I need you to conduct a ceremony:
 
