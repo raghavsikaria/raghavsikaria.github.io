@@ -89,9 +89,9 @@ a {
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-color: $header-bg-color;
+  background-color: black;
   // background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-  background-image: url(../header_img.jpg);
+  // background-image: url(../header_img.jpg);
   width: 100%;
 
   @include large {
