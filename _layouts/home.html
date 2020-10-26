@@ -5,23 +5,27 @@ layout: default
 <div class="home">
 
   {{ content }}
-  
+  Hello reader, welcome to my site, where I exhibit my projects, their blogs & some maths with you mostly from the domain of Data Science + Finance!
   <ul class="post-list">
+    {% assign ktm_tag = "know_the_math" %}
     {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h2 class="homepage">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        <span>
-          {% for tag in post.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-            <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>#{{ tag_name }}</nobr></code></a>
-          {% endfor %}
-        </span>
-        <p>{{ post.description }}</p>
-      </li>
+      {% if post.tags contains ktm_tag %}
+      {% else %}
+        <li>
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h2 class="homepage">
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+            <span>
+              {% for tag in post.tags %}
+                {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>#{{ tag_name }}</nobr></code></a>
+              {% endfor %}
+            </span>
+            <p>{{ post.description }}</p>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
