@@ -8,7 +8,7 @@ permalink: /about
 ![A photo of me](assets/about_me/my_profile.jpg)
 *Hello, this is me!*
 
-I currently am a Specialist Software Engineer at Societe Generale here in Bengaluru and have cleared the CFA Level 1 examination. I aspire to work in the domain of Data Science. I also am exploring Quantitative Finance as a hobby. Also, I used to be a professional theatre artist - did a few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club.
+I currently am a Data Scientist at Societe Generale here in Bengaluru and have cleared the CFA Level 1 examination. I also am exploring Quantitative Finance as a hobby. Also, I used to be a professional theatre artist - did a few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club.
 
 Have drained myself completely during the COVID Lockdown here in India. Building a personal website had long been my dream, and after all these years of excuses; the lockdown had given me just the time for it! So I made this site because I have wanted to blog since forever, share my thoughts & poems, share my projects for being presentable in the Data Science domain for which I am crushing hard to penetrate and above all - because I wanted one!
 
