@@ -7,7 +7,7 @@ layout: default
 		<div class="h-100 tofront">
 			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
 				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
-					<p class="text-uppercase font-weight-bold">
+					<p class="font-weight-bold">
                         <span class="catlist">
 						{% for category in page.categories %}
                           <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a><span class="sep">, </span>
@@ -15,11 +15,15 @@ layout: default
                         </span>
 					</p>
 					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
-					<div class="d-flex align-items-center">
-                        {% if author.avatar %}
+					<div class="d-flex">
+                        <!-- {% if author.avatar %}
                         <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="70"/>
-                        {% endif %}
-						<small class="ml-3"> {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
+                        {% endif %} -->
+						<small class="ml-3"> 
+							<!-- {{ author.name }}  -->
+							<!-- <span>
+								<a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a>
+							</span> -->
                             <span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
 						</small>
 					</div>
@@ -60,26 +64,23 @@ layout: default
 				</div>
 			</div>
 		</div>
-        
-        
 		<div class="col-md-12 col-lg-8">
-            
             <!-- Article -->
 			<article class="article-post">                
 			{{ content }}                
 			</article>
 			
 			<!-- Tags -->
-			<div class="mb-4">
+			<!-- <div class="mb-4">
 				<span class="taglist">
 				{% for tag in page.tags %}
 				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
 				{% endfor %}
 				</span>
-			</div>
+			</div> -->
  
             <!-- Mailchimp Subscribe Form -->
-            {% if site.mailchimp-list %}
+            <!-- {% if site.mailchimp-list %}
 			<div class="border p-5 bg-lightblue">
 				<div class="row justify-content-between">
 					<div class="col-md-6 mb-2 mb-md-0">
@@ -102,10 +103,10 @@ layout: default
 					</div>
 				</div>
 			</div>
-            {% endif %}
+            {% endif %} -->
             
             
-             <!-- Author Box -->
+             <!-- Author Box
                 {% if page.author %}				
 				<div class="row mt-5">
 					<div class="col-md-2 align-self-center">
@@ -118,7 +119,7 @@ layout: default
 						{{ author.bio }}					
 					</div>
 				</div>				
-                {% endif %}
+                {% endif %} -->
             
             <!-- Comments -->
             {% if page.comments != false %}

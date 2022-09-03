@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Know The Math - The Hidden Markov Model & the Viterbi Algorithm"
+date: 2020-11-15 22:00:00 +0530
+description: ' "Hum kisi se bhi, kisi waqt bhi, kahin bhi mil sakte hain ... hamara jab dil chahe" - Raaj Kumar from movie Tirangaa '
+categories: [ tech, know_the_math, machine_learning ]
+image: assets/images/demo1.jpg
+tags: featured
+author: raghav
+---
+
+[hmm_1_miniblog]: https://raghavsikaria.github.io/posts/2020-11-10-ktm-hmm_1
+[viterbi_algorithm_1]: ../assets/post_imgs/2020-11-15-ktm-hmm_2/viterbi_algorithm_1.PNG
+[viterbi_algorithm_2]: ../assets/post_imgs/2020-11-15-ktm-hmm_2/viterbi_algorithm_2.jpg
+[viterbi_algorithm_3]: ../assets/post_imgs/2020-11-15-ktm-hmm_2/viterbi_algorithm_3.jpg
+[jurafskys_work]: https://web.stanford.edu/~jurafsky/slp3/A.pdf
+[eisner_work]: https://cs.jhu.edu/~jason/papers/eisner.tnlp02.pdf
+
+Hello reader, welcome to my _Know The Math_ series, a less formal series of blogs, where I take you through the *notoriously complex* backend mathematics which forms the soul for machine learning algorithms. I try and summarise works of famous researchers, put them as my notes and share with everyone in hopes that it might be helpful for you too!
+
+This is in continuation to the last [HMM mini-blog which covered the setup, the example in case and our variables][hmm_1_miniblog]. I am again going to try and summarise Jurafsky's work over [here][jurafskys_work], as quick notes!.
+
+Before we begin, I need you to conduct a ceremony:
+
+1. Stand up in front of a mirror, and say it out aloud, _"I am going to learn the Math behind HMM & the Viterbi Algorithm, today!"_
+2. Take a out a naice register & pen to go through the derivation with me.
+
+## Contents
+
+1. [Introduction](#introduction)
+2. [The components of Hidden Markov Model](#the-components-of-hidden-markov-model)
+3. [First-Order HMM & its Assumptions](#first-order-hmm--its-assumptions)
+4. [3 Fundamental problems of HMM](#3-fundamental-problems-of-hmm)
+5. [Understanding the Case & Example](#understanding-the-case--example)
+6. [The Forward Algorithm](#the-forward-algorithm)
+7. [References](#references)
+
+## Introduction
+
+Recalling from previous mini-blog on HMM, we know that our 2nd problem is to find the _best_ Hidden state sequence **Q** when an input observation sequence and the Hidden Markov model λ are given. Building from the Eisner's example (refer [here][hmm_1_miniblog]), this means that let's say, we have been given a sequence of 3-1-3 ice-creams on 3 consecutive days and our Hidden Markov model, _what is the most probable sequence of hidden states?_
+
+## The Viterbi Algorithm
+
+Theoretically, we could apply the Forward algorithm for all possible hidden state sequences, and then simply take the maximum probability from the sequences. And the sequence which wil have the maximum likelihood will simply be our desired hidden state sequence as well. But, as we discussed in the last mini-blog, for N number of hidden states, if we carry out Forward algorithm for each, then the worst case complexity will reach O((TN^2) * (N^T)) which simplifies to O(N^T) and is essentially an exponential time algorithm. The Viterbi algorithm will help us solve the 2nd problem as mentioned above as well as the exponential time complexity issue we face. Like the Forward Algorithm, this too has a worst case time complexity of O(TN^2) optimised by Dynamic Programming. At each hidden state for every observation symbol in our sequence, we are simple going to select the hidden state which has the maximum probability amongst all paths from the very first symbol in observation sequence.
+
+![Seeing how we explore best path from all hidden sequences and the idea in Viterbi algorithm][viterbi_algorithm_1]
+*Seeing how we explore best path from all hidden sequences and the idea in Viterbi algorithm, source: [Jurafsky's work][jurafskys_work]*
+
+In the algorithm, probability at every hidden state has been simplified as _Viterbi Path Probability_ functions.
+
+![The Viterbi Path probability][viterbi_algorithm_2]
+*The Viterbi Path probability, source: [Jurafsky's work][jurafskys_work]*
+
+![Algorithm Pseudocode & Time Series Analysis][viterbi_algorithm_3]
+*Algorithm Pseudocode & Time Series Analysis*
+
+Hope I was able to help you out with the concepts mentioned! I would also request to have a look at the original work, since this is just a summarised version of it for quick revision. Thank you so much Professor Jurafsky for the pathbreaking work.
+
+## References
+
++ <https://web.stanford.edu/~jurafsky/slp3/A.pdf>
++ <https://cs.jhu.edu/~jason/papers/eisner.tnlp02.pdf>
++ <http://mlg.eng.cam.ac.uk/zoubin/papers/ijprai.pdf>
++ <https://towardsdatascience.com/introduction-to-hidden-markov-models-cd2c93e6b781>
+
+> प्रकृतेर्गुणसम्मूढ़ाः सज्जन्ते गुणकर्मसु ।   
+> तानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत् ॥                  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Bhagavad Gita 3.29 ॥
+
+(Read about this Shloka from the Bhagavad Gita here at [http://sanskritslokas.com/](http://sanskritslokas.com/gita-slokas2.html))
