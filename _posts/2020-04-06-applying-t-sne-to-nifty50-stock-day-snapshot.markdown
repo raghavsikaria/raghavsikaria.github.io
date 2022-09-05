@@ -2,13 +2,17 @@
 layout: post
 title: "Applying t-SNE to NIFTY50 Stock Day snapshot and visualizing all iterations using Bokeh(Python) - JSCallBacks & User Interactivity"
 date: 2020-04-06 22:00:00 +0530
-tags: tech python bokeh data_visualization machine_learning
 description: "Arre O Samba, kitne features they? Sardar, poore 100. Woh 100, aur tum BTech graduate! Phir bhi khaali haath laut aaye suarr ke bachhonn?"
+categories: [ tech, python, bokeh, data_visualization, machine_learning ]
+image: assets/thumbnails/thumbnail_2020-04-06-applying-t-sne-to-nifty50-stock-day-snapshot.jpg
+tags: featured
+author: raghav
 ---
+
+Hello reader, ever stumbled upon a tricky dataset with large number of features? Tried PCA and had to be content with linear dimensionality reduction?
 
 [Originally published here on LinkedIn](https://www.linkedin.com/pulse/applying-t-sne-nifty50-stock-day-snapshot-visualizing-raghav-sikaria/)
 
-Hello reader, ever stumbled upon a tricky dataset with large number of features? Tried PCA and had to be content with linear dimensionality reduction?
 Explore how I've leveraged t-SNE non-linear dimensionality reduction algorithm on NIFTY50 Stock data day snapshot and visualised all the iterations using Bokeh, Sklearn and Python.
 
 And if you've never coded before, why not start now? This very moment!

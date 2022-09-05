@@ -1,50 +1,70 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Raghav Sikaria
-author: Raghav Sikaria
-email: raghavsikaria9@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Data Science. Backend Dev. CFA L1 Exam cleared.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username:  raghavsikaria
-github_username:  raghavsikaria
-repository: raghavsikaria/raghavsikaria.github.io
-permalink: /posts/:year-:month-:day-:title
-
+# Site
+name: 'Raghav Sikaria'
+description: 'to serve as my portfolio and personal blog site'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+disqus: 'thepiranha'
+formspree: https://formspree.io/f/xdojakel
 google_analytics: UA-165339475-1
-disqus:
-    shortname: thepiranha
+email: 'raghavsikaria9@gmail.com'
+github_link: 'https://github.com/raghavsikaria'
+linkedin_link: 'https://www.linkedin.com/in/raghavsikaria/'
+instagram_link: 'https://www.instagram.com/subah_ka_bhoola/?igshid=YmMyMTA2M2Y%3D'
+stackoverflow_link: 'https://stackoverflow.com/users/7890913/raghavsikaria'
 
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-cayman
-plugins:
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+authors:
+    sal:
+      name:           Sal
+      site:           https://www.wowthemes.net
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+      email:          wowthemesnet@gmail.com
+      twitter:        https://twitter.com/wowthemesnet
+
+    jane:
+      name:           Jane
+      site:           https://www.wowthemes.net
+      avatar:         /assets/images/avatar2.jpg
+      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+      email:          fakemail@gmail.com
+      twitter:        https://twitter.com/wowthemesnet
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: sal
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]

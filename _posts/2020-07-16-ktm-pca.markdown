@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Know The Math - The PCA"
+title: "Know The Math - The Principal Component Analysis algorithm"
 date: 2020-07-16 22:00:00 +0530
-tags: tech machine_learning know_the_math
 description: ' "Meri zarooratein kam hai… is liye mere zameer mein dum hai" - Ajay Devgn from movie Singham '
+categories: [ tech, know_the_math, machine_learning ]
+image: assets/thumbnails/thumbnail_2020-07-16-ktm-pca.jpg
+author: raghav
 ---
 
 [site_link_for_portfolio_proj]: https://raghavsikaria.github.io/posts/2020-06-20-time-series-analysis-and-prediction
@@ -16,9 +18,10 @@ description: ' "Meri zarooratein kam hai… is liye mere zameer mein dum hai" - 
 [coursera_course]: https://www.coursera.org/learn/linear-algebra-machine-learning/home/welcome
 [maharshi_parekh]: https://www.linkedin.com/in/mgparekh/
 
-<p style="text-align:right">co-author: <em><a href="https://www.linkedin.com/in/mgparekh/">Maharshi Parekh</a></em></p>
 
 Hello reader, welcome to my _Know The Math_ series, a less formal series of blogs, where I take you through the *notoriously complex* backend mathematics which forms the soul for machine learning algorithms. The idea for the series originated from my Project - [NIFTYBANK Index Time series analysis, Prediction, Deep Learning & Bayesian Hyperparameter Optimization][site_link_for_portfolio_proj] where people also asked to explain the underlying concepts.
+
+<p style="text-align:right">co-author: <em><a href="https://www.linkedin.com/in/mgparekh/">Maharshi Parekh</a></em></p>
 
 Before we begin, I need you to conduct a ceremony:
 

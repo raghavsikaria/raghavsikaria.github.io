@@ -2,8 +2,10 @@
 layout: post
 title: "Know The Math - Everything Logistic Regression"
 date: 2020-07-01 22:00:00 +0530
-tags: tech machine_learning know_the_math
 description: ' "Aadhe idhar jao ... aadhe idhar jao ... aur baaki hamare saath aao." - Asrani from movie Sholay '
+categories: [ tech, know_the_math, machine_learning ]
+image: assets/thumbnails/thumbnail_2020-07-01-ktm-logistic-regression.jpg
+author: raghav
 ---
 
 [site_link_for_portfolio_proj]: https://raghavsikaria.github.io/posts/2020-06-20-time-series-analysis-and-prediction

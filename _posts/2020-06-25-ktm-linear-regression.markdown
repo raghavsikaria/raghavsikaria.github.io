@@ -2,8 +2,10 @@
 layout: post
 title: "Know The Math - Linear Regression & the Coefficients via Ordinary Least Squares"
 date: 2020-06-25 22:00:00 +0530
-tags: tech machine_learning know_the_math
 description: ' "Hum jahan khade ho jaate hain, line wahi se shuru hoti hain." - Amitabh Bachchan from movie Kaalia '
+categories: [ tech, know_the_math, machine_learning ]
+image: assets/thumbnails/thumbnail_2020-06-25-ktm-linear-regression.jpg
+author: raghav
 ---
 
 [site_link_for_portfolio_proj]: https://raghavsikaria.github.io/posts/2020-06-20-time-series-analysis-and-prediction

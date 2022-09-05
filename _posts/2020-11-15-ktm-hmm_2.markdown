@@ -2,8 +2,10 @@
 layout: post
 title: "Know The Math - The Hidden Markov Model & the Viterbi Algorithm"
 date: 2020-11-15 22:00:00 +0530
-tags: tech machine_learning know_the_math
 description: ' "Hum kisi se bhi, kisi waqt bhi, kahin bhi mil sakte hain ... hamara jab dil chahe" - Raaj Kumar from movie Tirangaa '
+categories: [ tech, know_the_math, machine_learning ]
+image: assets/thumbnails/thumbnail_2020-11-15-ktm-hmm_2.jpg
+author: raghav
 ---
 
 [hmm_1_miniblog]: https://raghavsikaria.github.io/posts/2020-11-10-ktm-hmm_1

@@ -2,8 +2,11 @@
 layout: post
 title: "NIFTYBANK - Time Series Analysis, Prediction & Hyper Parameter Optimization"
 date: 2020-06-20 22:00:00 +0530
-tags: tech python data_visualization bokeh machine_learning time_series hyperparameter_optimization
 description: ' "Sahi time par sahi jagah hona, sahi time par sahi baat karna, aur sahi time par sahi kaam uthana, isi ko luck kehte hai." - Danny Denzongpa from movie Luck '
+categories: [ tech, python, data_visualization, bokeh, machine_learning, time_series, hyperparameter_optimization ]
+tags: [sticky]
+image: assets/thumbnails/thumbnail_2020-06-20-time-series-analysis-and-prediction.jpg
+author: raghav
 ---
 
 [github_repository]: https://github.com/raghavsikaria/Project-Rajasuyya

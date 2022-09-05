@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <section class="main-content">
+      <a href="/">Home</a> | <a href="/tag/know_the_math">Know The Math</a> | <a href="/about">About</a>
+      <br>
+      <br>
+      {{ content }}
+      {% include footer.html %}
+    </section>
+  </body>
+</html>
