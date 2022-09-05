@@ -4,14 +4,14 @@ title: "Visualizing Correlation Matrix using Bokeh(Python) - User Interactivity 
 date: 2020-03-27 22:00:00 +0530
 description: "Pehle pyaar aur pehla blog, bhulaaye nahi bhoolte!"
 categories: [ tech, python, bokeh, data_visualization, machine_learning ]
-image: assets/images/demo1.jpg
+image: assets/thumbnails/thumbnail_2020-03-27-visualizing-correlation-matrix-using-bokeh.jpg
 tags: featured
 author: raghav
 ---
 
-[Originally published here on LinkedIn](https://www.linkedin.com/pulse/visualizing-correlation-matrix-using-bokehpython-user-sikaria/)
-
 Hello reader, tired of procrastination amidst the Corona breakdown? If jazzy interactive graphs in your feed grab your attention, look no more, here is something that might fix you up. 
+
+[Originally published here on LinkedIn](https://www.linkedin.com/pulse/visualizing-correlation-matrix-using-bokehpython-user-sikaria/)
 
 And if you've never coded before, why not start now? This very moment!
 

@@ -5,8 +5,13 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'thepiranha'
+formspree: https://formspree.io/f/xdojakel
+google_analytics: UA-165339475-1
 email: 'raghavsikaria9@gmail.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+github_link: 'https://github.com/raghavsikaria'
+linkedin_link: 'https://www.linkedin.com/in/raghavsikaria/'
+instagram_link: 'https://www.instagram.com/subah_ka_bhoola/?igshid=YmMyMTA2M2Y%3D'
+stackoverflow_link: 'https://stackoverflow.com/users/7890913/raghavsikaria'
 
 include: ["_pages"]
 permalink: /:title/

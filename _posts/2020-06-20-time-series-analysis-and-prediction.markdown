@@ -5,7 +5,7 @@ date: 2020-06-20 22:00:00 +0530
 description: ' "Sahi time par sahi jagah hona, sahi time par sahi baat karna, aur sahi time par sahi kaam uthana, isi ko luck kehte hai." - Danny Denzongpa from movie Luck '
 categories: [ tech, python, data_visualization, bokeh, machine_learning, time_series, hyperparameter_optimization ]
 tags: [sticky]
-image: assets/images/home.jpg
+image: assets/thumbnails/thumbnail_2020-06-20-time-series-analysis-and-prediction.jpg
 author: raghav
 ---
 

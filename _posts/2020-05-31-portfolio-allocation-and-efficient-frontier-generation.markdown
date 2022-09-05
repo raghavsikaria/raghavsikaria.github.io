@@ -4,7 +4,7 @@ title: "Portfolio Allocation & Efficient Frontier Generation"
 date: 2020-05-31 22:00:00 +0530
 description: ' "Risk to Spiderman ko bhi lena padta hai, main to phir bhi salesman hoon" - Ranbir Kapoor from movie Rocket Singh '
 categories: [ tech, python, data_visualization, bokeh ]
-image: assets/images/demo1.jpg
+image: assets/thumbnails/thumbnail_2020-05-31-portfolio-allocation-and-efficient-frontier-generation.jpg
 tags: featured
 author: raghav
 ---

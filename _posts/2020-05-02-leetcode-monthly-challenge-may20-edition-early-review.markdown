@@ -4,18 +4,18 @@ title: "LeetCode Monthly Challenge - May'20 Edition - Early review"
 date: 2020-05-02 22:00:00 +0530
 description: "My first attempt at being vocal about my views!"
 categories: [ tech, review, competitive_coding ]
-image: assets/images/17.jpg
+image: assets/thumbnails/thumbnail_2020-05-02-leetcode-monthly-challenge-may20-edition-early-review.jpg
 tags: featured
 author: raghav
 ---
-
-[Originally published here on LinkedIn](https://www.linkedin.com/pulse/leetcode-monthly-challenge-may20-edition-early-review-sikaria/)
 
 LeetCode Monthly Challenge - May'20 Edition?
 Is your feed full of the LeetCode April/May challenge posts?
 Do you want to try it? Is it for you?
 
 Let's find out!
+
+[Originally published here on LinkedIn](https://www.linkedin.com/pulse/leetcode-monthly-challenge-may20-edition-early-review-sikaria/)
 
 **TL;DR**: Verdict - Good for getting into habit and practice for beginners but for the more initiated I'd recommend ditching this! Having only coded on Hackerrank, I can only suggest that to you right now. (link at the end)
 

@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "my journey so far ..."
 layout: post
 permalink: "/about-me"
 author: raghav
@@ -8,19 +8,19 @@ author: raghav
 ![A photo of me](assets/about_me/my_profile.jpg)
 *Hello, this is me!*
 
-I am Raghav Sikaria, currently, an Associate at Goldman Sachs here in Bengaluru and have cleared the CFA Level 1 examination. Previously I've worked as a Data Scientist at Societe Generale. I also am exploring Quantitative Finance as a hobby. Also, I used to be a professional theatre artist - did a few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club.
+I am Raghav Sikaria, currently pursuing MS in Computer Science at New York University here in New York in United States. Previously, I was working as an Associate at Goldman Sachs in Bengaluru. I've also worked as a Data Scientist and Specialist Software Engineer at Societe Generale prior to Goldman. You can find me doing some Hindi Poetry in open-mic spots in the city. I used to be a professional theatre artist - did a few gigs with TVF Timeliners, NSD(National School of Drama), Crea-Shakthi Theatre group and VIT(my alma mater) Dramatics Club. Owing to my interest in finance I also cleared CFA Level 1 examination back in 2020 and then covid happened :) \[Though I am open to working for all domains]
 
-Have drained myself completely during the COVID Lockdown here in India. Building a personal website had long been my dream, and after all these years of excuses; the lockdown had given me just the time for it! So I made this site because I have wanted to blog since forever, share my thoughts & poems, share my projects for being presentable in the Data Science domain for which I am crushing hard to penetrate and above all - because I wanted one!
+I made this site because I have wanted to blog since forever, share my thoughts & poems, my projects for being presentable in the industry and above all - because I wanted one!
 
-Here is what has been happening on my board + life for past few months:
+These past 2 years I've had life changing experience, and it amazes me how times passes. I always like to remind myself the time I've come from. So here's a snapshot from my board + life back from Jan 2020:
 
 ![My current status](assets/about_me/current_status.jpg)
-*My current state + motto + mantra + ambitions*
+*My state + motto + mantra + ambitions back in Jan 2020*
 
-And this is my timeline - some of the most important milestones in recent years which have contributed in shaping my philosophy on life and professional career:
+And this was my timeline graph back then - which contributed in shaping my philosophy on life and professional career:
 
 ![My Timeline](assets/about_me/my_timeline.jpg)
-*My important milestones so far in life*
+*My important milestones by Jan 2020*
 
 Here are direct links for _some_ of my projects:
 

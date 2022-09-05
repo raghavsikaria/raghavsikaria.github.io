@@ -4,8 +4,7 @@ title: "Know The Math - The Hidden Markov Model & the Forward Algorithm"
 date: 2020-11-10 22:00:00 +0530
 description: ' "Tareekh pe tareekh, tareekh pe tareekh, tareekh pe tareekh milti gayi My Lord, par insaaf nahi mila" - Sunny Deol from movie Damini '
 categories: [ tech, know_the_math, machine_learning ]
-image: assets/images/17.jpg
-tags: featured
+image: assets/thumbnails/thumbnail_2020-11-10-ktm-hmm_1.jpg
 author: raghav
 ---
 

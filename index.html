@@ -20,9 +20,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     {% assign latest_post = site.posts[-1] %}
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
-    <a href="{{site.baseurl}}{{latest_post.url}}">
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
-    </a>
+    <!-- <a href="{{site.baseurl}}{{latest_post.url}}"> -->
+    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;background-size: cover;background-repeat: no-repeat;object-position: -20% 0;"></div>     
+    <!-- </a> -->
     <div class="card-body px-0 pb-0 d-flex flex-column" style="text-align:center">
     <h2 class="h5 font-weight-bold">
     <a class="text-dark">{{ latest_post.title }}</a>
@@ -31,7 +31,13 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         <!-- {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }} -->
         I deliver credibility via Python. Sometimes a poet too. 
         <br>
-        follow <a href="https://www.instagram.com/subah_ka_bhoola/?igshid=YmMyMTA2M2Y%3D">subah_ka_bhoola</a>
+        <!-- follow <a href="https://www.instagram.com/subah_ka_bhoola/?igshid=YmMyMTA2M2Y%3D">subah_ka_bhoola</a> -->
+        <!-- <div> -->
+            <a target="_blank" href="{{ site.stackoverflow_link }}"><i class="fab fa-stack-overflow text-muted" aria-hidden="true"></i></a> &nbsp;
+            <a target="_blank" href="{{ site.linkedin_link }}"><i class="fab fa-linkedin text-muted" aria-hidden="true"></i></a> &nbsp;
+            <a target="_blank" href="{{ site.github_link }}"><i class="fab fa-github text-muted" aria-hidden="true"></i></a> &nbsp;
+            <a target="_blank" href="{{ site.instagram_link }}"><i class="fab fa-instagram text-muted" aria-hidden="true"></i></a> &nbsp;
+        <!-- </div> -->
     </p>
     <!-- <div>
         <small class="d-block text-muted">
@@ -52,7 +58,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     <div class="col-md-6">
         
         <!-- second latest post -->
-        {%- assign second_post = site.posts[1] -%}        
+        {%- assign second_post = site.posts[0] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
                 <div class="col-md-4">
@@ -65,6 +71,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
                     </h2>
+                    <!-- <p class="excerpt">
+                        {{ second_post.description  | strip_html | strip_newlines | truncate: 186}}
+                     </p>                     -->
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in second_post.categories %}
@@ -79,7 +88,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
             </div>
         
         <!-- third latest post -->
-        {%- assign third_post = site.posts[2] -%}        
+        {%- assign third_post = site.posts[1] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if third_post.image %}
                 <div class="col-md-4">
@@ -92,6 +101,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
                     </h2>
+                    <!-- <p class="excerpt">
+                        {{ third_post.description  | strip_html | strip_newlines | truncate: 186}}
+                     </p>                   -->
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in third_post.categories %}
@@ -106,7 +118,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
             </div>
         
         <!-- fourth latest post -->
-        {%- assign fourth_post = site.posts[3] -%}        
+        {%- assign fourth_post = site.posts[2] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
                 <div class="col-md-4">
@@ -119,6 +131,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
                     </h2>
+                    <!-- <p class="excerpt">
+                        {{ fourth_post.description  | strip_html | strip_newlines | truncate: 186}}
+                     </p>                       -->
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in fourth_post.categories %}

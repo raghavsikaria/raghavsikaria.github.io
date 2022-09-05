@@ -4,8 +4,7 @@ title: "Know The Math - Linear Regression & the Coefficients via Ordinary Least 
 date: 2020-06-25 22:00:00 +0530
 description: ' "Hum jahan khade ho jaate hain, line wahi se shuru hoti hain." - Amitabh Bachchan from movie Kaalia '
 categories: [ tech, know_the_math, machine_learning ]
-image: assets/images/17.jpg
-tags: featured
+image: assets/thumbnails/thumbnail_2020-06-25-ktm-linear-regression.jpg
 author: raghav
 ---
 
