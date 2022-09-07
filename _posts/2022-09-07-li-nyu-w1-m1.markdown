@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Week 1 @ NYU, Month 1 @ NY - another beginning!"
+date: 2022-09-07 22:00:00 +0530
+description: "my take on the experience so far in this foreign land."
+categories: [ linkedin, nyu, nyu_recurring_updates ]
+image: ../assets/post_imgs/2022-09-07-li-nyu-w1-m1/thumbnail_2022-09-07-li-nyu-w1-m1.jpg
+tags: featured
+author: raghav
+---
+
+[day1_nyu_image]: ../assets/post_imgs/2022-09-07-li-nyu-w1-m1/nyu_day1.jpg
+
+<!-- <style>
+    .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style> -->
+So, I've completed my first week at New York University and almost am about to complete my first month in this foreign land (~ 15th September technically)
+
+I've had classes for all three subjects this semester - Information Visualization, Operating Systems, and Cloud Computing. There are not enough words to describe my experience here. Being in a classroom after 4 years after my B. Tech (graduated in 2018) is _unreal_. And, to add more to this, this style of teaching is something I'd never imagined. Professors talk about research papers in the classes, they **discuss** and **debate** on points that students freely object to. I mean like, how? Some scientist dude came up with something, which has been proven and followed in the industry at a large scale for so many years, and now, just because **you** think that _that_ dude was wrong: you can freely interrupt the flow of the class and announce upfront to everyone that, "excuse me Professor, that is wrong". But the crazier part of the story is, that the professor won't flinch. He won't ignore it. He will not put the person down. With great patience, he will hear them out and **discuss** with the class. My Indian upbringing would shyly ask me then: "is this even respectful to the professor?". Students just randomly walk out of the class (sometimes for washroom, other times for random reasons), they're hooked on their phones/laptops/tablets and you can also find some sleepy heads on the desks. The world just seems so free and the experience in itself is liberating.
+
+A bit about my subjects and teachers:
+Professor Claudio Silva takes my Information Visualization class, who started this department and subject offering 11 years back with another peer in the college. In the first 5 minutes of the first class, he announces: "interrupt me anytime you want, I won't mind at all" (which I did put to test later, for genuine reasons of course :))
+Professor Kamen Yotov and Professor Sambit Sahu take my Operating Systems class and Cloud Computing. Unbelievably, they both are working in the industry parallelly, at Hudson River Trading and Amazon. The former, left a lasting impression when he gave me a completely new perspective on **Time**. He showed us this video where legendary Grace Hopper (who was a Rear Admiral in the US Navy) which will make you realize "what is the length of time". 
+
+<iframe width="500" height="300" src="https://www.youtube.com/embed/9eyFDBPk4Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+They took us through syllabus, and I was so crazed to learn, that we'll be reading research papers of landmark technologies that brought Cloud Computing to where it is today - all as part of our curriculum.
+
+![first day at NYU][day1_nyu_image]
+*First Day at NYU: any algorithm to hide happiness? why need one!*
+
+The best part about these subjects? There are no exams. We have to code and do projects.
+
+
+> यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।        
+> स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥   
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Bhagavad Gita 3.21॥
+
+(Read about this Shloka from the Bhagavad Gita here at [http://sanskritslokas.com/](http://sanskritslokas.com/gita-slokas1.html))
