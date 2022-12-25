@@ -110,7 +110,7 @@ The latter is rather basic since they've started operations recently and in thes
 ![cash vs total liabilities][cash_vs_total_liabilities_v5]
 *Code for visualization [here][observable_notebook_link]*
 
-In the balance statement of a company, there are many different kinds of assets and liabilities. For the sake of simplicity and appealing to the uninitiated, we have chosen Cash (real money $$$) and Total Liabilities (all kinds of liabilities, summed up by their $$$ value). Like all the metrics above these also represent the scale of a company.
+In the balance statement of a company, there are many different kinds of assets and liabilities. For the sake of simplicity and appealing to the uninitiated, we have chosen Cash (real money \$\$\$) and Total Liabilities (all kinds of liabilities, summed up by their \$\$\$ value). Like all the metrics above these also represent the scale of a company.
 
 Remember, in the Finance world, nothing is binary aka good or bad. The answer to any question is _it depends_. Why are we saying this? Because the layman feels that having a lot of cash is good, and having a lot of debt is bad. Well, since now we're no more the uninitiated, the right answer is: _"it depends"_. In gross oversimplification think of it like this, having too much cash might mean that the management of the company does not how to utilize their cash. This might then reflect poorly on them. Similarly, having great debt might mean that the company is confident about paying back to their lenders, possibly because they have an excellent outlook for their near future. Well, nothing is for certain, and situations like this definitely ask for an in-depth analysis.
 
