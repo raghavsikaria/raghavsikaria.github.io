@@ -5,7 +5,7 @@ date: 2020-05-02 22:00:00 +0530
 description: "My first attempt at being vocal about my views!"
 categories: [ tech, review, competitive_coding ]
 image: assets/thumbnails/thumbnail_2020-05-02-leetcode-monthly-challenge-may20-edition-early-review.jpg
-tags: featured
+tags: []
 author: raghav
 ---
 

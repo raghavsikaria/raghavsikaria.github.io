@@ -5,7 +5,7 @@ date: 2022-09-07 22:00:00 +0530
 description: "my take on the experience so far in this foreign land."
 categories: [ linkedin, nyu, nyu_recurring_updates ]
 image: ../assets/post_imgs/2022-09-07-li-nyu-w1-m1/thumbnail_2022-09-07-li-nyu-w1-m1.jpg
-tags: featured
+tags: []
 author: raghav
 ---
 

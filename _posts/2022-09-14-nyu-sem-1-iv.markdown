@@ -5,7 +5,7 @@ date: 2022-09-14 22:00:00 +0530
 description: "my experience learning from the legendary Professor Claudio Silva and creating graphs."
 categories: [ linkedin, nyu, nyu_subject_journal ]
 image: ../assets/post_imgs/2022-09-14-nyu-sem-1-iv/thumbnail_2022-09-14-nyu-sem-1-iv.jpg
-tags: featured
+tags: []
 author: raghav
 ---
 
