@@ -5,7 +5,7 @@ date: 2020-03-27 22:00:00 +0530
 description: "Pehle pyaar aur pehla blog, bhulaaye nahi bhoolte!"
 categories: [ tech, python, bokeh, data_visualization, machine_learning ]
 image: assets/thumbnails/thumbnail_2020-03-27-visualizing-correlation-matrix-using-bokeh.jpg
-tags: featured
+tags: []
 author: raghav
 ---
 

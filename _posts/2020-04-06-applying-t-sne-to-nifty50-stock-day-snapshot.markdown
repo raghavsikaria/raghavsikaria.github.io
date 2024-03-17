@@ -5,7 +5,7 @@ date: 2020-04-06 22:00:00 +0530
 description: "Arre O Samba, kitne features they? Sardar, poore 100. Woh 100, aur tum BTech graduate! Phir bhi khaali haath laut aaye suarr ke bachhonn?"
 categories: [ tech, python, bokeh, data_visualization, machine_learning ]
 image: assets/thumbnails/thumbnail_2020-04-06-applying-t-sne-to-nifty50-stock-day-snapshot.jpg
-tags: featured
+tags: []
 author: raghav
 ---
 

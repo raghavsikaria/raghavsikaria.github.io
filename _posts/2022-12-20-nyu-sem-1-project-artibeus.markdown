@@ -5,7 +5,7 @@ date: 2022-12-20 22:00:00 +0530
 description: "An honest attempt to answer this question, from a purely financials perspective."
 categories: [ tech, javascript, d3js, data_visualization, nyu, finance ]
 image: ../assets/post_imgs/2022-12-20-nyu-sem-1-project-artibeus/market_cap_v2.png
-tags: [sticky]
+tags: [featured]
 author: raghav
 ---
 

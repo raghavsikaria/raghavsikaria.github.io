@@ -3,7 +3,7 @@ layout: post
 title: "Thread-safe LRU & MRU cache in Python"
 date: 2024-03-16 22:00:00 +0530
 description: "it is exactly what the title says..."
-categories: [ tech, python, operating_system ]
+categories: [ tech, operating_system, python ]
 image: ../assets/post_imgs/2024-03-17-lru-and-mru-cache-in-python/lru_thumbnail.png
 tags: [sticky]
 author: raghav
@@ -11,11 +11,6 @@ author: raghav
 
 [thread_safety]: ../assets/post_imgs/2024-03-17-lru-and-mru-cache-in-python/thread_safety_driver.png
 [lru_cache]: ../assets/post_imgs/2024-03-17-lru-and-mru-cache-in-python/lru_thumbnail.png
-
-# Thread-safe LRU & MRU cache in Python
-
-![lru cache][lru_cache]
-*the man, the myth, the legend: cache.*
 
 For sometime now I’ve been observing a lot of discussion around caches & their implementations on LinkedIn and my batchmates from NYU (be it for software interviews, optimizations or system design in general).
 
