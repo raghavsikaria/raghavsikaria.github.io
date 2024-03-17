@@ -262,7 +262,7 @@ for i in range(NUMBER_OF_THREADS):
 *Output for the above tester code for thread-safety*
 
 
-Thank you for reading the article! I hope you found the answers you were looking for.
+Thank you for reading the article! I hope you found the answers you were looking for. You can also check out [this implementation of cache](https://github.com/django/django/blob/main/django/core/cache/backends/locmem.py) used in DJango backend framework of Python.
 
 <br>
 <br>
